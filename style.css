@@ -1,8 +1,7 @@
-.hero {
-  color: whitesmoke;
+.nav-link:hover {
+  border-bottom: 3px solid lightsalmon;
 }
 
-.content1 {
-  padding: 10px;
-  margin: 50px;
+.nav-link:active {
+  border-bottom: 3px solid lightgrey;
 }
