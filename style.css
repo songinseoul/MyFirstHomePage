@@ -9,9 +9,9 @@
   border-bottom: 3px solid grey;
 }
 
-.active {
-  /*.active, :active .a .active doesn't work!
-  : active would change the font color when I click the nav bar.*/
+.nav-main .active {
+  /*.active, :active .a .active don't work!
+  : active would change the font color only when I click the nav bar.*/
   border-bottom: 3px solid lightsalmon;
-  color: lightsalmon;
+  color: salmon;
 }
