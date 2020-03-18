@@ -1,50 +1,82 @@
 <!DOCTYPE html>
-
-<!--My First Web Page
-anything in this line doesn't print/command.
-
-declare the types of document / also name it .(type)
-div : element / section
-head/body :
-h1/h2 : html grammar for text size
--->
-
-<!-- Build a personal website
-
-1. overall view (homepage)
-2. about you - seperapte page or section
-3. contact - " 
--->
-
-<!-- Everything after this has an ending tag. 
-- this is like your skeleton of the website 
-- if its a class with a name then put .class name
-- if is it just elements (h1, h2 etc) 
--->
-
 <html>
+  <!-- whatever in the head defines the website, will not display on the browser. -->
   <head>
+    <!-- refers to boostrap defined styles-->
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
-
-    <title>Header : Title of the document</title>
+    <!-- refers to to styles.css file I've created -->
     <link rel="stylesheet" href="styles.css" />
+
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="doodling while working in Seoul as a growth manager"
+    />
+    <meta name="author" content="Song Lee Han" />
+    <meta
+      name="keywords"
+      content="growth marketing, css, html, growth hacking"
+    />
+    <meta name="classification" content />
+
+    <!-- website title on the search engine-->
+    <title>Song in the City Jungle</title>
   </head>
 
   <body>
-    <div class="hero">
-      <!--div is like a section or an element.-->
-      <h1>Song In Seoul</h1>
-      <h4>by : Sonya Han</h4>
+    <div class="main-container d-flex h-100 p-3 mx-auto flex-column">
+      <header class="main-header text-center">
+        <div class="nav-bar mb-auto">
+          <h2 class="title-nav-bar">SonginSeoul</h2>
+          <nav class="nav nav-main justify-content-center">
+            <a class="nav-link active" href="#">Home</a>
+            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="#">Blog</a>
+          </nav>
+        </div>
+      </header>
+      <main class="main-cover">
+        <div class="main-intro">
+          <h1 class="main-heading">Welcome to the City Jungle of Seoul.</h1>
+          <p class="main-description">
+            Hi, I'm Sonya.<br />
+            This is a place where I share my stories as a woman in tech
+            industry.<br />
+            <span style="background-color:tomato">I teach ;</span> designing
+            interactive virtual learning experiences at Korea's one and only ISA
+            school.<br />
+            <span style="background-color:tomato">I learn ;</span> data
+            visualization and growth marketing are my interests in 2020.<br />
+          </p>
+        </div>
+        <div class="lead">
+          <p class="lead">
+            Let's keep in touch!<br />
+            Share your thoughts with me.<br />
+            Contact Info goes somewhere here<br />
+            <a href="#" class="btn btn-md btn-secondary">Learn More</a>
+          </p>
+        </div>
+      </main>
+      <footer>
+        <!-- footer should be in the middle of the display-->
+        <div class="footer">
+          <p>
+            Owned by Sonya Han<br />
+            Published with
+            <a href="https://ondelta.io">Ondelta</a>
+          </p>
+        </div>
+      </footer>
     </div>
-    <div class="content1">
-      <p>Everything inside the Website : The content of the document......</p>
-    </div>
-
+    <!-- 
+      =================================================
+      Bootsrap placed at the end to load pages faster-->
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
