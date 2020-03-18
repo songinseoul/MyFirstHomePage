@@ -10,7 +10,7 @@
       crossorigin="anonymous"
     />
     <!-- refers to to styles.css file I've created -->
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="style.css" />
 
     <meta charset="UTF-8" />
     <meta
@@ -32,11 +32,15 @@
     <div class="main-container d-flex h-100 p-3 mx-auto flex-column">
       <header class="main-header text-center">
         <div class="nav-bar mb-auto">
-          <h2 class="title-nav-bar">SonginSeoul</h2>
+          <h2 class="main-slogan">SonginSeoul</h2>
           <nav class="nav nav-main justify-content-center">
-            <a class="nav-link active" href="#">Home</a>
-            <a class="nav-link" href="#">About</a>
-            <a class="nav-link" href="#">Blog</a>
+            <a
+              class="nav-link active"
+              href="file:///C:/Users/songi/Desktop/DEV/Project4/index.html"
+              >Home</a
+            >
+            <a class="nav-link" href="/about.html">About</a>
+            <a class="nav-link" href="/blog.html">Blog</a>
           </nav>
         </div>
       </header>
@@ -47,19 +51,29 @@
             Hi, I'm Sonya.<br />
             This is a place where I share my stories as a woman in tech
             industry.<br />
-            <span style="background-color:tomato">I teach ;</span> designing
-            interactive virtual learning experiences at Korea's one and only ISA
-            school.<br />
-            <span style="background-color:tomato">I learn ;</span> data
-            visualization and growth marketing are my interests in 2020.<br />
+            <span style="font-size:150%; background-color:tomato"
+              >I teach ;</span
+            >
+            I design interactive virtual learning experiences at South Korea's
+            one and only ISA school.<br />
+            <span style="font-size:150%; background-color:tomato"
+              >I learn ;</span
+            >
+            I am interested in data analytics and how it can make better sense
+            of the world.<br />
           </p>
         </div>
         <div class="lead">
+          <!-- lead : understand who's visiting
+        what can I ask them to do in their favor? -->
           <p class="lead">
-            Let's keep in touch!<br />
-            Share your thoughts with me.<br />
-            Contact Info goes somewhere here<br />
-            <a href="#" class="btn btn-md btn-secondary">Learn More</a>
+            <pre>
+              Option
+              1) latest blog entry (click image)
+              2) lead to about page (click button)
+            </pre>
+            <!-- lead to about page? or fb/linkedin-->
+            <a href="#" class="btn btn-md btn-secondary">Learn</a>
           </p>
         </div>
       </main>
@@ -67,8 +81,11 @@
         <!-- footer should be in the middle of the display-->
         <div class="footer">
           <p>
-            Owned by Sonya Han<br />
-            Published with
+            <pre>
+              another nav bar (home/about/blog)
+              Facebook, Likedin Icons
+            </pre>
+            Sonya Han Published with
             <a href="https://ondelta.io">Ondelta</a>
           </p>
         </div>

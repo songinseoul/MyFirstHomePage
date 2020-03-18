@@ -1,7 +1,14 @@
-.nav-link:hover {
-  border-bottom: 3px solid lightsalmon;
+.main-header {
+  padding-bottom: 50px;
+}
+.nav-main .nav-link {
+  border-bottom: 3px solid transparent;
+  font-display: ;
+}
+.nav-main .nav-link:hover {
+  border-bottom: 3px solid grey;
 }
 
-.nav-link:active {
-  border-bottom: 3px solid lightgrey;
+.nav-main .nav-link .active {
+  border-bottom: 3px solid lightsalmon;
 }
