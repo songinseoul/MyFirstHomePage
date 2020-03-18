@@ -1,17 +1,30 @@
+body {
+  background-color: #333;
+  color: white;
+  box-shadow: 0 0 10rem black inset;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.main-intro {
+  text-align: center;
+}
+
+.lead {
+  color: whitesmoke;
+}
 .main-header {
   padding-bottom: 50px;
 }
 .nav-main .nav-link {
   border-bottom: 3px solid transparent;
-  color: lightgray;
+  color: gray;
 }
 .nav-main .nav-link:hover {
   border-bottom: 3px solid grey;
 }
 
 .nav-main .active {
-  /*.active, :active .a .active don't work!
-  : active would change the font color only when I click the nav bar.*/
-  border-bottom: 3px solid lightsalmon;
-  color: salmon;
+  /*colors considering : tomato, salmon*/
+  border-bottom: 3px solid white;
+  color: white;
 }
