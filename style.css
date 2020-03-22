@@ -1,8 +1,97 @@
-.hero {
+/*html in general */
+html {
+  scroll-behavior: smooth;
+}
+
+/*body in general */
+body {
+  /*
+  background-image: url("image/sunset-red-night-river.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 50%;
+*/
+  background-color: white;
+  color: black;
+  /* hide text shadow
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5); */
+}
+
+/*body-header Nav Bar */
+.main-header {
+  padding-bottom: 50px;
+}
+
+.main-slogan {
+  padding: 25px 0 10px 0;
+}
+.nav-main .nav-link {
+  border-bottom: 8px solid transparent;
+  color: #3f3f3f;
+}
+.nav-main .nav-link:hover {
+  border-bottom: 8px solid #ce3635;
+}
+
+.nav-main .active {
+  /*colors considering : tomato, salmon*/
+  border-bottom: 8px solid rgb(247, 119, 105);
+  color: rgb(247, 119, 105);
+}
+
+/*body-main typewriter */
+.main-intro {
+  border-radius: 10px;
+  padding: 50px;
+  margin: 50px;
+  background-color: #ce3635;
+  box-shadow: 0em 0em 10px 3px rgba(0, 0, 0, 0.08);
+  /*cascading effect*/
+  z-index: 1;
+}
+
+.scroll {
+  width: 30px;
+  height: 20px;
+  float: right;
+  opacity: 50%;
+}
+
+.scroll:hover {
+  opacity: 90%;
+  position: relative;
+  top: 5px;
+}
+
+.last-scroll {
+  transform: rotateX(180deg);
+}
+
+a:link,
+a:hover,
+a:visited {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+/*body-sub */
+.sub-intro {
+  border-radius: 10px;
+  padding: 50px;
+  margin: 50px;
+  background-color: #ce3635;
+  box-shadow: 0em 0em 10px 3px rgba(0, 0, 0, 0.08);
+  /*cascading effect*/
+  z-index: 1;
+}
+
+/*body-sub leads to other pages */
+.lead {
   color: whitesmoke;
 }
 
-.content1 {
-  padding: 10px;
-  margin: 50px;
+/*footer */
+.footer {
+  align: center;
 }

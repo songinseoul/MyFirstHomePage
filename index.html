@@ -1,50 +1,120 @@
 <!DOCTYPE html>
-
-<!--My First Web Page
-anything in this line doesn't print/command.
-
-declare the types of document / also name it .(type)
-div : element / section
-head/body :
-h1/h2 : html grammar for text size
--->
-
-<!-- Build a personal website
-
-1. overall view (homepage)
-2. about you - seperapte page or section
-3. contact - " 
--->
-
-<!-- Everything after this has an ending tag. 
-- this is like your skeleton of the website 
-- if its a class with a name then put .class name
-- if is it just elements (h1, h2 etc) 
--->
-
 <html>
+  <!-- whatever in the head defines the website, will not display on the browser. -->
   <head>
+    <!-- refers to boostrap defined styles-->
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
+    <!-- refers to to styles.css file I've created -->
+    <link rel="stylesheet" href="style.css" />
 
-    <title>Header : Title of the document</title>
-    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="doodling while working in Seoul as a growth manager"
+    />
+    <meta name="author" content="Song Lee Han" />
+    <!-- google ignores the keywords. but still want to give it a try.-->
+    <meta
+      name="keywords"
+      content="growth marketing, css, html, growth hacking"
+    />
+    <!-- website title on the search engine-->
+    <title>Song in the City Jungle : Growth Marketing</title>
   </head>
 
   <body>
-    <div class="hero">
-      <!--div is like a section or an element.-->
-      <h1>Song In Seoul</h1>
-      <h4>by : Sonya Han</h4>
+    <div class="main-container d-flex h-100 p-3 mx-auto flex-column">
+      <header class="main-header text-center">
+        <div class="nav-bar mb-auto">
+          <h2 class="main-slogan">☆ㄴr는ㅇr직눈물을흘린ㄷr.☆</h2>
+          <nav class="nav nav-main justify-content-center">
+            <a
+              class="nav-link active"
+              href="index.html"
+              >Home</a
+            >
+            <a class="nav-link" href="about.html">About</a>
+            <a class="nav-link" href="blog.html">Blog</a>
+          </nav>
+        </div>
+      </header>
+      <main class="main-cover">
+        <div class="main-intro" id="section1">
+          <h1 class="container-typewriter">
+            Hi there, <br>
+            I am 
+            <a
+              href=""
+              class="typewrite"
+              data-period="1000"
+              data-type='[ "Sonya.", "a woman in tech industry.", "a growth marketer." ]'
+            >
+              <span class="wrap"></span>
+            </a>
+          </h1>
+          <h1 class="main-heading">
+            <br>
+            Welcome to the City Jungle of Seoul.<br>
+          </h1>
+          <a href = "#section2"><img class = "scroll" src="image/arrow.png" alt = "Click to Say Hi!"></a>
+        </div>
+        <div class= "sub-intro" id="section2">
+          <h2>
+            <span style="font-size:150%; color:white"
+            >I motivate</span
+            > <br>
+            <br>
+            I pursue making impact on people's lives and motivate them to become learning machines - true growth hackers.<br /> 
+          </h2>
+          <a href = "#section3"><img class = "scroll" src="image/arrow.png" alt = "Click to Say Hi!"></a>
+        </div>  
+        <div class= "sub-intro" id="section3">
+          <h2>
+            <span style="font-size:150%; color:white"
+            >I teach</span
+            > <br>
+            <br>
+            I design interactive virtual learning experiences at South Korea's
+            one and only ISA school<br>
+          </h2>
+          <a href = "#section4"><img class = "scroll" src="image/arrow.png" alt = "Click to Say Hi!"></a>
+        </div>          
+        <div class= "sub-intro" id="section4">
+          <h2>
+            <span style="font-size:150%; color:white"
+            >I learn</span
+            > <br>
+            <br>
+            I am interested in data analytics and how it can make better sense
+            of the world. Currently I am digging into R, SQL and Growth Marketing.<br>
+          </h2>
+          <a href = "#section1"><img class = "scroll last-scroll" src="image/arrow.png" alt = "Click to Say Hi!"></a>
+        </div>  
+      </main>
+      <footer>
+        <!-- footer should be in the middle of the display-->
+        <div class="footer">
+          <p>
+            <pre>
+              another nav bar (home/about/blog)
+              Facebook, Likedin Icons
+            </pre>
+            Owned by Sonya Han 
+            <a href="https://ondelta.io">Ondelta</a>
+          </p>
+        </div>
+      </footer>
     </div>
-    <div class="content1">
-      <p>Everything inside the Website : The content of the document......</p>
-    </div>
-
+    <!-- 
+      =================================================
+      Bootsrap placed at the end to load pages faster-->
+    <script type="text/javascript" src="js/typewriter.js"></script>
+    <script type="text/javascript" src="js/smoothscroll.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
