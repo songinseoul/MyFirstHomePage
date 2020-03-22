@@ -86,12 +86,14 @@ a:visited {
   z-index: 1;
 }
 
-/*body-sub leads to other pages */
-.lead {
-  color: whitesmoke;
-}
-
 /*footer */
 .footer {
   text-align: center;
+}
+
+/*blog cover */
+.blog-intro {
+  text-align: center;
+  background-color: rgb(242, 228, 224);
+  padding: 100px;
 }

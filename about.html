@@ -1,17 +1,12 @@
 <!DOCTYPE html>
 <html>
-  <!-- about page : 
-- data visualization
-- who I am (in timeline)
-- digital nomad : where I have been (map)
-- my keywords :
-gamification, design thinking, lean startup
-learning techniques, coaching, birkman method etc.
--->
-
   <!-- whatever in the head defines the website, will not display on the browser. -->
   <head>
-    <script type="text/javascript" src="js/snippet.js"></script>
+    <!-- this is font awesome -->
+    <script
+      src="https://kit.fontawesome.com/9b83964738.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- refers to boostrap defined styles-->
     <link
       rel="stylesheet"
@@ -20,7 +15,7 @@ learning techniques, coaching, birkman method etc.
       crossorigin="anonymous"
     />
     <!-- refers to to styles.css file I've created -->
-    <link rel="stylesheet" href="styleabout.css" />
+    <link rel="stylesheet" href="style.css" />
 
     <meta charset="UTF-8" />
     <meta
@@ -43,37 +38,46 @@ learning techniques, coaching, birkman method etc.
         <div class="nav-bar mb-auto">
           <h2 class="main-slogan">SonginSeoul</h2>
           <nav class="nav nav-main justify-content-center">
-            <a class="nav-link active" href="index.html">Home</a>
-            <a class="nav-link" href="about.html">About</a>
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link active" href="about.html">About</a>
             <a class="nav-link" href="blog.html">Blog</a>
           </nav>
         </div>
       </header>
-    </div>
-    <div class="container-typewriter">
-      <h1>
-        I am Sonya <br />
-        I am a woman in tech industry.<br />
-        I do growth marketing. <br />
-      </h1>
-      <h1>
-        <br />
-        Welcome to the City Jungle of Seoul.<br />
-        I am
-        <a
-          href=""
-          class="typewrite"
-          data-period="1000"
-          data-type='[ "Sonya.", "a woman in tech industry.", "digging growth marketing." ]'
-        >
-          <span class="wrap"></span>
-        </a>
-      </h1>
-    </div>
+      <main class="about-cover">
+        <div class="about-intro container" id="section1"></div>
+      </main>
+      <footer>
+        <!-- footer should be in the middle of the display-->
+        <div class="footer">
+          <p class="social-buttons">
+            <a
+              href="https://www.linkedin.com/in/songincityjungle/"
+              target="_blank"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a
+              href="https://www.facebook.com/songleeh?ref=bookmarks"
+              target="_blank"
+              ><i class="fab fa-facebook-square"></i
+            ></a>
+            <a href="https://brunch.co.kr/@amindfulgap1127" target="_blank"
+              ><i class="fab fa-medium"></i
+            ></a>
+          </p>
 
+          <p class="copywright">
+            Owned by Sonya Han
+            <a href="https://ondelta.io">Ondelta</a>
+          </p>
+        </div>
+      </footer>
+    </div>
     <!-- 
-  =================================================
-  Bootsrap placed at the end to load pages faster-->
+      =================================================
+      Bootsrap placed at the end to load pages faster-->
+    <script type="text/javascript" src="js/typewriter.js"></script>
+    <script type="text/javascript" src="js/smoothscroll.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
