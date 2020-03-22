@@ -5,12 +5,10 @@ html {
 
 /*body in general */
 body {
-  /*
-  background-image: url("image/sunset-red-night-river.jpg");
+  background-image: url("image/cityofseoul.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: 100% 50%;
-*/
+  background-size: 100% 100%;
   background-color: white;
   color: black;
   /* hide text shadow
@@ -19,11 +17,11 @@ body {
 
 /*body-header Nav Bar */
 .main-header {
-  padding-bottom: 50px;
+  padding-bottom: 150px;
 }
 
 .main-slogan {
-  padding: 25px 0 10px 0;
+  padding: 25px 0 0 0;
 }
 .nav-main .nav-link {
   border-bottom: 8px solid transparent;
