@@ -1,0 +1,219 @@
+/*html in general */
+html {
+  scroll-behavior: smooth;
+}
+
+/*body in general - this is hidden to apply worldmap css styles */
+body {
+  background-image: url("image/cityofseoul.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  background-color: white;
+  color: black;
+}
+/* hide text shadow
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5); */
+
+body {
+  background-color: #f0f0f0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.map-container {
+  padding: 3.2rem 0.8rem;
+  position: relative;
+  display: inline-block;
+}
+
+.map-container img {
+  width: 100%;
+}
+
+.map-container .point {
+  cursor: pointer;
+  position: absolute;
+  width: 1.6rem;
+  height: 1.6rem;
+  background-color: #00acc1;
+  border-radius: 50%;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  will-change: transform, box-shadow;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-box-shadow: 0 0 0 rgba(0, 172, 193, 0.4);
+  box-shadow: 0 0 0 rgba(0, 172, 193, 0.4);
+  -webkit-animation: pulse 3s infinite;
+  animation: pulse 3s infinite;
+}
+
+.map-container .point:hover {
+  -webkit-animation: none;
+  animation: none;
+  -webkit-transform: translate(-50%, -50%) scale3D(1.35, 1.35, 1);
+  transform: translate(-50%, -50%) scale3D(1.35, 1.35, 1);
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),
+    0 3px 6px rgba(0, 0, 0, 0.23);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.map-container .seoul {
+  top: 33%;
+  left: 82%;
+}
+
+.map-container .auckland {
+  top: 80%;
+  left: 95%;
+}
+
+.map-container .losangeles {
+  top: 35%;
+  left: 9%;
+}
+
+.map-container .tainan {
+  top: 48%;
+  left: 82%;
+}
+
+.map-container .tokyo {
+  top: 40%;
+  left: 87%;
+}
+
+.map-container .zurich {
+  top: 32%;
+  left: 48%;
+}
+
+.map-container .london {
+  top: 30%;
+  left: 42%;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 172, 193, 0.5);
+    box-shadow: 0 0 0 0 rgba(0, 172, 193, 0.5);
+  }
+  70% {
+    -webkit-box-shadow: 0 0 0 25px rgba(0, 172, 193, 0);
+    box-shadow: 0 0 0 25px rgba(0, 172, 193, 0);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 172, 193, 0);
+    box-shadow: 0 0 0 0 rgba(0, 172, 193, 0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 172, 193, 0.5);
+    box-shadow: 0 0 0 0 rgba(0, 172, 193, 0.5);
+  }
+  70% {
+    -webkit-box-shadow: 0 0 0 25px rgba(0, 172, 193, 0);
+    box-shadow: 0 0 0 25px rgba(0, 172, 193, 0);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 172, 193, 0);
+    box-shadow: 0 0 0 0 rgba(0, 172, 193, 0);
+  }
+}
+/*# sourceMappingURL=style.css.map */
+
+/*body-header Nav Bar */
+.main-header {
+  padding-bottom: 150px;
+}
+
+.main-slogan {
+  padding: 25px 0 0 0;
+}
+.nav-main .nav-link {
+  border-bottom: 8px solid transparent;
+  color: #9f9f9f;
+}
+.nav-main .nav-link:hover {
+  border-bottom: 8px solid rgb(244, 127, 106);
+}
+
+.nav-main .active {
+  /*colors considering : tomato, salmon*/
+  border-bottom: 8px solid rgb(242, 228, 224);
+  color: rgb(242, 228, 224);
+}
+
+/*body-main typewriter */
+.main-intro {
+  border-radius: 10px;
+  padding: 50px;
+  margin: 50px;
+  background-color: rgb(255, 83, 74);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), 0 2px 2px rgba(0, 0, 0, 0.15),
+    0 4px 4px rgba(0, 0, 0, 0.15), 0 8px 8px rgba(0, 0, 0, 0.15);
+  /*cascading effect*/
+  z-index: 1;
+}
+
+.scroll {
+  width: 30px;
+  height: 20px;
+  float: right;
+  opacity: 50%;
+}
+
+.scroll:hover {
+  opacity: 90%;
+  position: relative;
+  top: 5px;
+}
+
+.last-scroll {
+  transform: rotateX(180deg);
+}
+
+a:link,
+a:hover,
+a:visited {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+/*body-sub */
+.sub-intro {
+  border-radius: 10px;
+  padding: 50px;
+  margin: 50px;
+  background-color: rgb(255, 83, 74);
+  /*cascading effect*/
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), 0 2px 2px rgba(0, 0, 0, 0.15),
+    0 4px 4px rgba(0, 0, 0, 0.15), 0 8px 8px rgba(0, 0, 0, 0.15);
+  z-index: 1;
+}
+
+/*footer */
+.footer {
+  text-align: center;
+}
+
+.about-description {
+  text-align: center;
+  padding: none;
+}
+
+.about-header {
+  text-align: center;
+  padding-top: none;
+}

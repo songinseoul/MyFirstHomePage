@@ -95,5 +95,17 @@ a:visited {
 .blog-intro {
   text-align: center;
   background-color: rgb(242, 228, 224);
-  padding: 100px;
+  padding: 50px 100px 50px 100px;
+}
+
+.blog-1 {
+  padding-top: none;
+  position: relative;
+}
+
+.blog-1-header {
+  background-color: black;
+  margin: 0px 50px 0px 50px;
+  color: white;
+  padding: 10px;
 }
