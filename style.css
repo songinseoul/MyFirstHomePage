@@ -1,7 +1,111 @@
-.nav-link:hover {
-  border-bottom: 3px solid lightsalmon;
+/*html in general */
+html {
+  scroll-behavior: smooth;
 }
 
-.nav-link:active {
-  border-bottom: 3px solid lightgrey;
+/*body in general */
+body {
+  background-image: url("image/cityofseoul.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  background-color: white;
+  color: black;
+  /* hide text shadow
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5); */
+}
+
+/*body-header Nav Bar */
+.main-header {
+  padding-bottom: 150px;
+}
+
+.main-slogan {
+  padding: 25px 0 0 0;
+}
+.nav-main .nav-link {
+  border-bottom: 8px solid transparent;
+  color: #9f9f9f;
+}
+.nav-main .nav-link:hover {
+  border-bottom: 8px solid rgb(244, 127, 106);
+}
+
+.nav-main .active {
+  /*colors considering : tomato, salmon*/
+  border-bottom: 8px solid rgb(242, 228, 224);
+  color: rgb(242, 228, 224);
+}
+
+/*body-main typewriter */
+.main-intro {
+  border-radius: 10px;
+  padding: 50px;
+  margin: 50px;
+  background-color: rgb(255, 83, 74);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), 0 2px 2px rgba(0, 0, 0, 0.15),
+    0 4px 4px rgba(0, 0, 0, 0.15), 0 8px 8px rgba(0, 0, 0, 0.15);
+  /*cascading effect*/
+  z-index: 1;
+}
+
+.scroll {
+  width: 30px;
+  height: 20px;
+  float: right;
+  opacity: 50%;
+}
+
+.scroll:hover {
+  opacity: 90%;
+  position: relative;
+  top: 5px;
+}
+
+.last-scroll {
+  transform: rotateX(180deg);
+}
+
+a:link,
+a:hover,
+a:visited {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+/*body-sub */
+.sub-intro {
+  border-radius: 10px;
+  padding: 50px;
+  margin: 50px;
+  background-color: rgb(255, 83, 74);
+  /*cascading effect*/
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), 0 2px 2px rgba(0, 0, 0, 0.15),
+    0 4px 4px rgba(0, 0, 0, 0.15), 0 8px 8px rgba(0, 0, 0, 0.15);
+  z-index: 1;
+}
+
+/*footer */
+.footer {
+  text-align: center;
+}
+
+/*blog cover */
+.blog-intro {
+  text-align: center;
+  background-color: rgb(242, 228, 224);
+  padding: 50px 100px 50px 100px;
+}
+
+.blog-1 {
+  padding-top: none;
+  position: relative;
+}
+
+.blog-1-header {
+  background-color: black;
+  margin: 0px 50px 0px 50px;
+  color: white;
+  padding: 10px;
 }

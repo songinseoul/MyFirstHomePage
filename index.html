@@ -1,96 +1,112 @@
 <!DOCTYPE html>
 <html>
-  <!-- whatever in the head defines the website, will not display on the browser. -->
-  <head>
-    <!-- refers to boostrap defined styles-->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-      crossorigin="anonymous"
-    />
-    <!-- refers to to styles.css file I've created -->
-    <link rel="stylesheet" href="styles.css" />
+<!-- whatever in the head defines the website, will not display on the browser. -->
 
-    <meta charset="UTF-8" />
-    <meta
-      name="description"
-      content="doodling while working in Seoul as a growth manager"
-    />
-    <meta name="author" content="Song Lee Han" />
-    <meta
-      name="keywords"
-      content="growth marketing, css, html, growth hacking"
-    />
-    <meta name="classification" content />
+<head>
+  <!-- this is font awesome -->
+  <script src="https://kit.fontawesome.com/9b83964738.js" crossorigin="anonymous"></script>
+  <!-- refers to boostrap defined styles-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+  <!-- refers to to styles.css file I've created -->
+  <link rel="stylesheet" href="style.css" />
 
-    <!-- website title on the search engine-->
-    <title>Song in the City Jungle</title>
-  </head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="doodling while working in Seoul as a growth manager" />
+  <meta name="author" content="Song Lee Han" />
+  <!-- google ignores the keywords. but still want to give it a try.-->
+  <meta name="keywords" content="growth marketing, css, html, growth hacking" />
+  <!-- website title on the search engine-->
+  <title>Song in the City Jungle : Growth Marketing</title>
+</head>
 
-  <body>
-    <div class="main-container d-flex h-100 p-3 mx-auto flex-column">
-      <header class="main-header text-center">
-        <div class="nav-bar mb-auto">
-          <h2 class="title-nav-bar">SonginSeoul</h2>
-          <nav class="nav nav-main justify-content-center">
-            <a class="nav-link active" href="#">Home</a>
-            <a class="nav-link" href="#">About</a>
-            <a class="nav-link" href="#">Blog</a>
-          </nav>
-        </div>
-      </header>
-      <main class="main-cover">
-        <div class="main-intro">
-          <h1 class="main-heading">Welcome to the City Jungle of Seoul.</h1>
-          <p class="main-description">
-            Hi, I'm Sonya.<br />
-            This is a place where I share my stories as a woman in tech
-            industry.<br />
-            <span style="background-color:tomato">I teach ;</span> designing
-            interactive virtual learning experiences at Korea's one and only ISA
-            school.<br />
-            <span style="background-color:tomato">I learn ;</span> data
-            visualization and growth marketing are my interests in 2020.<br />
-          </p>
-        </div>
-        <div class="lead">
-          <p class="lead">
-            Let's keep in touch!<br />
-            Share your thoughts with me.<br />
-            Contact Info goes somewhere here<br />
-            <a href="#" class="btn btn-md btn-secondary">Learn More</a>
-          </p>
-        </div>
-      </main>
-      <footer>
-        <!-- footer should be in the middle of the display-->
-        <div class="footer">
-          <p>
-            Owned by Sonya Han<br />
-            Published with
-            <a href="https://ondelta.io">Ondelta</a>
-          </p>
-        </div>
-      </footer>
-    </div>
-    <!-- 
+<body>
+  <div class="main-container d-flex h-100 p-3 mx-auto flex-column">
+    <header class="main-header text-center">
+      <div class="nav-bar mb-auto">
+        <h2 class="main-slogan">SonginSeoul</h2>
+        <nav class="nav nav-main justify-content-center">
+          <a class="nav-link active" href="index.html">Home</a>
+          <a class="nav-link" href="about.html">About</a>
+          <a class="nav-link" href="blog.html">Blog</a>
+        </nav>
+      </div>
+    </header>
+    <main class="main-cover">
+      <div class="main-intro" id="section1">
+        <h1 class="container-typewriter">
+          Hi there, <br />
+          I am
+          <a href="" class="typewrite" data-period="1000"
+            data-type='[ "Sonya.", "a woman in tech industry.", "a growth marketer." ]'>
+            <span class="wrap"></span>
+          </a>
+        </h1>
+        <h1 class="main-heading">
+          <br />
+          Welcome to the City Jungle of Seoul.<br />
+        </h1>
+        <a href="#section2"><img class="scroll" src="image/arrow.png" alt="Click to Say Hi!" /></a>
+      </div>
+      <div class="sub-intro" id="section2">
+        <h2>
+          <span style="font-size:150%; color:white">I motivate</span> <br />
+          <br />
+          I create impact on people's lives and encourage them to become
+          learning machines - true growth hackers.<br />
+        </h2>
+        <a href="#section3"><img class="scroll" src="image/arrow.png" alt="Click to Say Hi!" /></a>
+      </div>
+      <div class="sub-intro" id="section3">
+        <h2>
+          <span style="font-size:150%; color:white">I teach</span> <br />
+          <br />
+          I design interactive virtual learning experiences at South Korea's
+          one and only ISA school.<br />
+        </h2>
+        <a href="#section4"><img class="scroll" src="image/arrow.png" alt="Click to Say Hi!" /></a>
+      </div>
+      <div class="sub-intro" id="section4">
+        <h2>
+          <span style="font-size:150%; color:white">I learn</span> <br />
+          <br />
+          I am interested in data analytics and how it can make better sense
+          of the world. Currently I am digging into R, SQL and Growth
+          Marketing.<br />
+        </h2>
+        <a href="#section1"><img class="scroll last-scroll" src="image/arrow.png" alt="Click to Say Hi!" /></a>
+      </div>
+    </main>
+    <footer>
+      <!-- footer should be in the middle of the display-->
+      <div class="footer">
+        <p class="social-buttons">
+          <a href="https://www.linkedin.com/in/songincityjungle/" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://www.facebook.com/songleeh?ref=bookmarks" target="_blank"><i
+              class="fab fa-facebook-square"></i></a>
+          <a href="https://brunch.co.kr/@amindfulgap1127" target="_blank"><i class="fab fa-medium"></i></a>
+        </p>
+        <p class="copywright">
+          Owned by Sonya Han
+          <a href="https://ondelta.io">Ondelta</a>
+        </p>
+      </div>
+    </footer>
+  </div>
+  <!-- 
       =================================================
       Bootsrap placed at the end to load pages faster-->
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  <script type="text/javascript" src="js/typewriter.js"></script>
+  <script type="text/javascript" src="js/smoothscroll.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
